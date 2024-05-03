@@ -84,3 +84,74 @@
     
 // }
 
+// ====================================
+// #include <iostream>
+// #include <vector>
+// #include <unordered_map>
+
+// int findUnique(const std::vector<int>& vec) {
+//     std::unordered_map<int, int> countMap;
+    
+//     for (int num : vec) {
+//         countMap[num]++;
+//     }
+    
+//     for (const auto& pair : countMap) {
+//         if (pair.second == 1) {
+//             return pair.first;
+//         }
+//     }
+    
+//     return 301; 
+// }
+
+// int main() {
+//     std::vector<int> nums = {10, 20, 30, 40, 50, 40, 30, 20, 10};
+//     int uniqueValue = findUnique(nums);
+//     if (uniqueValue != -1) {
+//         std::cout << "Unique value: " << uniqueValue << std::endl;
+//     } else {
+//         std::cout << "No unique value found" << std::endl;
+//     }
+//     return 0;
+// }
+
+// ================================================================
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+   
+   int vector1, vector2;
+   cout << "enter vector1 :=>" ;
+   cin >> vector1;
+   cout << "enter vector2 :=>" ;
+   cin >> vector2;
+
+   vector<int> value1(vector1);
+   vector<int> value2(vector2);
+   vector<int>mergedvector;
+
+   for(int i=0; i<value1.size(); i++){
+       cin >> value1[i];
+       mergedvector.push_back(value1[i]);
+
+   }
+   for(int i=0; i<value2.size(); i++){
+     cin >> value2[i];
+       mergedvector.push_back(value2[i]);
+   }
+   for(int i=0; i<mergedvector.size(); i++){
+       cout<<mergedvector[i]<<" ";
+   }
+   return 0;
+
+
+   
+
+
+   
+
+    
+};
