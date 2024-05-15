@@ -11,8 +11,7 @@ int main(){
         cout<<values[i]<<endl;
     }
 }
-
-// ---------------------------------expal-------------------------------
+// ---------------------------expal-------------------------------
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -29,6 +28,6 @@ int main() {
     for(int i = 0; i < a; i++) {
         sum += arr[i];
     }
-    cout << "Sum of the value: " << sum << endl;
+    cout << "Sum the value: " << sum << endl;
 
 }
